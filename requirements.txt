@@ -1,0 +1,44 @@
+# Use Python 3.10 or 3.11. Install a PyTorch build compatible with the local CPU/CUDA environment first.
+
+# Core time-series utilities
+einops==0.7.0
+
+# Numerical and data stack
+numpy==1.26.4
+scipy==1.11.3
+scikit-learn==1.7.2
+pandas==2.3.3
+matplotlib==3.10.8
+sktime==0.40.1
+sympy==1.13.1
+PyWavelets==1.9.0
+datasets==2.17.1
+PyYAML
+
+# Runtime utilities
+tqdm==4.66.5
+patool==4.0.3
+
+# Pretrained forecasting models
+transformers==4.57.3
+huggingface_hub==0.36.0
+accelerate
+safetensors
+chronos-forecasting==2.2.1
+tirex-ts==1.3.0
+timesfm==1.3.0
+
+# Moirai / uni2ts
+uni2ts==2.0.0
+gluonts==0.14.3
+lightning==2.6.0
+hydra-core==1.3.0
+jax[cpu]==0.4.35
+jaxtyping==0.2.24
+orjson==3.11.5
+python-dotenv==1.0.0
+
+# Spatial and graph models
+torch-spatiotemporal
+# MIGN additionally requires a PyTorch/CUDA-compatible DGL build.
+# HiSTGNN requires torch-geometric when its graph-attention path is enabled.

@@ -1,0 +1,20 @@
+data_args:
+  batch_size: 1
+  data_dir: ./dataset/French/MIGN
+  embedding_dir: ./dataset/French/MIGN
+  climatology_dir: ./dataset/French/MIGN/climatology.pkl
+  input_length: 48
+  output_length: 72
+  feature: MXSPD
+  refinement_level: 3
+  neighbor: 10
+
+model_args:
+  hidden_size: 64
+  learning_rate: 0.001
+  num_workers: 16
+  t_max: 500
+  head: 4
+  sh_before: false
+  sh_after: false
+  sh_level: 3
